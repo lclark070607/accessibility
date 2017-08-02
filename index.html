@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Accessibility Examples</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://cdn.materialdesignicons.com/1.9.32/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <main>
+
+        <!-- Button demo  -->
+        <!-- Semantic HTML button w/text for clarity  -->
+        <button>View</button>
+        <hr>
+
+        <!-- Button w/icon accessible  -->
+        <button>
+            <span class="visuallyhidden">View</span>
+            <i class="mdi mdi-account" aria-hidden="true"></i>
+        </button>
+        <hr>
+
+        <!-- Div w/icon accessible  -->
+        <div class="button" role="button" tabindex="0">
+            <svg width="34" height="34" viewbox="0 0 34 34" class="icon" aria-labelledby="svgtitle">
+                <title id="svgtitle">View</title>
+                <path d="someNumbers..."></path>
+            </svg>
+        </div>
+        <hr>
+
+
+        <!-- Accessible form demo  -->
+        <!-- Safari has a great Accessibility inspector  -->
+        <!-- Use implicit labeling:  wrap the text and the input in a label element  -->
+        <form action="">
+            <div>
+                <label>
+                    Your name
+                    <input type="text">
+                </label>
+            </div>
+
+            <p>Favorite Animal</p>
+            <div>
+                <label>
+                    <input type="radio" name="animals"> 
+                    Dog
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="animals"> 
+                    Cat
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="animals"> 
+                    Polar Bear
+                </label>
+            </div>
+            <div class="label-wrap">
+                <label for="hometown">
+                    Hometown
+                </label>
+            </div>
+            <div class="input-wrap">
+                <input type="text" id="hometown">
+            </div>
+        </form>
+        <hr>
+
+        <!-- Semantic Structure  -->
+<!-- Mozilla has a Web Developer Extension w/feature Information -> View Document Outline  -->
+
+    </main>
+
+</body>
+
+</html>
